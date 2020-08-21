@@ -21,6 +21,8 @@ Based on the awesome [Nord color palette](https://www.nordtheme.com/), Nord for 
 >
 > If you have any problems on other platforms please let me know.
 
+* If you encounter any problems, or if you have suggestions, please open a [new issue](https://github.com/ChristosBouronikos/typora-nord-theme/issues/new)  
+
 ![](/media/nord1.png)
 
 ![](/media/nord2.png)
