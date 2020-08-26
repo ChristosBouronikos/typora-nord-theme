@@ -4,11 +4,13 @@
 ### **Nord** theme has *finally* been ported for Typora!
 
 # A clean, beautiful dark theme for Typora!
+![GitHub All Releases](https://img.shields.io/github/downloads/ChristosBouronikos/typora-nord-theme/total?color=%23c060a1&style=flat-square)
 
 
 | Help Support Development                                     | Donate now |                   
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | <a href="https://www.buymeacoffee.com/chrisbouronikos" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-red.png" alt="Buy Me A Coffee" width="360" height="80"></a> | <a href="https://paypal.me/christosbouronikos" target="_blank"><img src="https://i.imgur.com/Fc70eDk.png" alt="Buy Me A Coffee" width="300" height="100"></a> |
+
 
 
 Based on the awesome [Nord color palette](https://www.nordtheme.com/), Nord for Typora brings the following awesome features:
