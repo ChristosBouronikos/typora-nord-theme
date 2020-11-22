@@ -35,3 +35,7 @@ Based on the awesome [Nord color palette](https://www.nordtheme.com/), Nord for 
 ![](/media/nord4.png)
 
 ![](/media/nord5.png)
+
+### Fixing some very minor inconveniences
+
+@ChristosBouronikos has done an outstanding job adapting Typora's colour scheme to the Nord colour palette, but there were some slight font issues, which I fixed.
