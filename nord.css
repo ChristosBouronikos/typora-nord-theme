@@ -200,7 +200,8 @@ body {
 #write h6 {
   margin-top: 0.5rem;
   margin-bottom: 0rem;
-  line-height: 1rem;
+  line-height: 1.6;
+  color: var(--text-color5);
 }
 
 #write h1 {
