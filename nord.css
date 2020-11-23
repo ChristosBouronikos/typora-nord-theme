@@ -44,12 +44,8 @@
   /* menu divider color */
   --menu-divider-color: ##3b4252;
   /* scrollbar color */
-  
   --scrollbar-thumb-color: #4c566a;
   --scrollbar-track-color: #4c566a;
-
-  
-
 
 
   /* theme select color */
@@ -107,16 +103,20 @@
 
   --node-border: var(--menu-divider-color);
   --node-fill: var(--bg-color2);
+  
+  --monospace: "Fira Code", "Source Code", "Consolas", monospace; /* seems to be the new way to do this */
 }
 
-/* font */
+/* Rubik is a variable font */
 @font-face {
-  font-family: "Open Sans";
+  font-family: "Rubik";
   font-style: normal;
   font-weight: normal;
-  src: local("Open Sans Regular"), url("./onedark/400.woff") format("woff");
+  src: local("Rubik"), url("./nord/Rubik-VF.woff2") format("woff2");
 }
 
+/* Rubik is a variable font so the remaining is not necessary */
+/*
 @font-face {
   font-family: "Open Sans";
   font-style: italic;
@@ -137,6 +137,31 @@
   font-weight: bold;
   src: local("Open Sans Bold Italic"), url("./onedark/700i.woff") format("woff");
 }
+*/
+
+/* Fira Code is a variable font, too */
+@font-face {
+  font-family: "Fira Code";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Fira Code Retina"), local("Fira Code Regular"), local("Fira Code"), url("./nord/FiraCode-VF.woff2") format("woff2");
+}
+
+/* Source Code is a variable font, but it has separate Roman and Italic subfonts as of 2019 */
+@font-face {
+  font-family: "Source Code";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Source Code Regular"), local("Source Code Variable Regular"), local("Source Code"), url("./nord/SourceCodeVariable-Roman.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Source Code";
+  font-style: italic;
+  font-weight: normal;
+  src: local("Source Code Italic"), local("Source Code Variable Italic"), local("Source Code"), url("./nord/SourceCodeVariable-Italic.woff2") format("woff2");
+}
+
 
 /* basic style */
 html {
@@ -144,8 +169,7 @@ html {
 }
 
 body {
-  font-family: "Consolas", "Open Sans", "Clear Sans", "Helvetica Neue", Helvetica, Arial,
-    sans-serif;
+  font-family: var(--monospace);
   color: var(--text-color1);
   background: var(--bg-color1);
   line-height: 1.6;
@@ -172,14 +196,14 @@ body {
 #write h4,
 #write h5,
 #write h6 {
-  margin-top: 0.5em;
-  margin-bottom: 0em;
-  line-height: 1em;
+  margin-top: 0.5rem;
+  margin-bottom: 0rem;
+  line-height: 1rem;
 }
 
 #write h1 {
-  font-size: 2.5em;
-  padding-bottom: 0.5em;
+  font-size: 2.5rem;
+  padding-bottom: 0.5rem;
   border-bottom: 5px double var(--text-color1);
 }
 
@@ -188,8 +212,8 @@ body {
 }
 
 #write h2 {
-  font-size: 2em;
-  padding-bottom: 0.5em;
+  font-size: 2rem;
+  padding-bottom: 0.5rem;
   border-bottom: 3px double var(--text-color1);
 }
 
@@ -198,21 +222,21 @@ body {
 }
 
 #write h3 {
-  font-size: 1.75em;
-  padding-bottom: 0.5em;
+  font-size: 1.75rem;
+  padding-bottom: 0.5rem;
   border-bottom: 1px solid var(--text-color1);
 }
 
 #write h4 {
-  font-size: 1.55em;
+  font-size: 1.55rem;
 }
 
 #write h5 {
-  font-size: 1.35em;
+  font-size: 1.35rem;
 }
 
 #write h6 {
-  font-size: 1.2em;
+  font-size: 1.2rem;
 }
 
 /* horizontal divider */
@@ -1704,7 +1728,7 @@ text.actor {
 
 .md-fences[lang="sequence"] text,
 .md-fences[lang="flow"] text {
-  font-family: "Consolas" !important;
+  font-family: var(--monospace) !important;
 }
 
 /* remove box shadow when not edit graph */
