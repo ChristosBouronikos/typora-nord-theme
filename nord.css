@@ -104,10 +104,12 @@
   --node-border: var(--menu-divider-color);
   --node-fill: var(--bg-color2);
   
+  /* I want Rubik by default! (gwyneth 20201123) */
+  --sans-serif: "Rubik";
   --monospace: "Fira Code", "Source Code", "Consolas", monospace; /* seems to be the new way to do this */
 }
 
-/* Rubik is a variable font */
+/* Rubik is a variable font (gwyneth 20201123) */
 @font-face {
   font-family: "Rubik";
   font-style: normal;
@@ -115,7 +117,7 @@
   src: local("Rubik"), url("./nord/Rubik-VF.woff2") format("woff2");
 }
 
-/* Rubik is a variable font so the remaining is not necessary */
+/* Rubik is a variable font so the remaining is not necessary (gwyneth 20201123) */
 /*
 @font-face {
   font-family: "Open Sans";
@@ -139,7 +141,7 @@
 }
 */
 
-/* Fira Code is a variable font, too */
+/* Fira Code is a variable font, too (gwyneth 20201123) */
 @font-face {
   font-family: "Fira Code";
   font-style: normal;
@@ -147,7 +149,7 @@
   src: local("Fira Code Retina"), local("Fira Code Regular"), local("Fira Code"), url("./nord/FiraCode-VF.woff2") format("woff2");
 }
 
-/* Source Code is a variable font, but it has separate Roman and Italic subfonts as of 2019 */
+/* Source Code is a variable font, but it has separate Roman and Italic subfonts as of 2019 (gwyneth 20201123) */
 @font-face {
   font-family: "Source Code";
   font-style: normal;
@@ -169,7 +171,7 @@ html {
 }
 
 body {
-  font-family: var(--monospace);
+  font-family: var(--sans-serif);  /* default used to be monospace... (gwyneth 20201123) */
   color: var(--text-color1);
   background: var(--bg-color1);
   line-height: 1.6;
@@ -207,9 +209,10 @@ body {
   border-bottom: 5px double var(--text-color1);
 }
 
-#write h1:before {
+/* I personally hate the § thingy before headers!! (gwyneth 20201123) */
+/* #write h1:before {
   content: "\00A7  ";
-}
+}*/
 
 #write h2 {
   font-size: 2rem;
@@ -217,9 +220,9 @@ body {
   border-bottom: 3px double var(--text-color1);
 }
 
-#write h2:before {
+/* #write h2:before {
   content: "\00A7  ";
-}
+} */
 
 #write h3 {
   font-size: 1.75rem;
@@ -878,8 +881,6 @@ select[disabled]:hover {
   visibility: hidden;
   opacity: 0;
   transition: 0.3s;
-
-
 }
 
 .megamenu-opened .megamenu-content {
@@ -892,14 +893,11 @@ select[disabled]:hover {
 .megamenu-menu {
   background-color: var(--bg-color2);
   box-shadow: 3px 0px 10px rgba(0, 0, 0, 0.5);
-
-
 }
 
 /* return button in mega menu */
 #megamenu-menu-sidebar .menu-style-btn {
-  border: 0px;
-  
+  border: 0px; 
 }
 
 /* remove divider in mega menu */
@@ -986,8 +984,6 @@ select[disabled]:hover {
   text-decoration: none;
   font-size: 22px;
 }
-
-
 
 
 .dropdown-menu:not(.megamenu-menu-list) {
@@ -1131,7 +1127,8 @@ footer.ty-footer {
 
 /* inline codeblock */
 code {
-  font-size: 0.9em;
+  font-family: var(--monospace);
+  font-size: 0.9rem;
   background-color: var(--bg-color5);
   border-radius: 6px;
   padding: 4px 4px 4px 4px;
@@ -1327,7 +1324,7 @@ code {
 /* unknown highlight keyword */
 .cm-s-inner .cm-quote,
 .cm-s-inner.cm-quote {
-  color: #57ac57;
+  color: var(--code-green-color);
 }
 
 .cm-s-inner .cm-link {
@@ -1335,15 +1332,15 @@ code {
 }
 
 .cm-s-inner .cm-negative {
-  color: #d95050;
+  color: var(--code-purple-color);
 }
 
 .cm-s-inner .cm-positive {
-  color: #50e650;
+  color: var(--code-green-color);
 }
 
 .cm-s-inner .cm-string-2 {
-  color: #f50;
+  color: var(--code-red-color);
 }
 
 .CodeMirror-gutters {
@@ -1373,6 +1370,13 @@ code {
 
 .on-focus-mode #write h3:not(.md-focus) {
   border-color: var(--text-color5);
+}
+
+/* default pre is set similar to code (gwyneth 20201123) */
+pre {
+  font-family: var(--monospace);
+  font-size: 0.9rem;
+  background-color: var(--bg-color5);
 }
 
 /* YAML block */
