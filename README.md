@@ -20,11 +20,11 @@ Based on the awesome [Nord color palette](https://www.nordtheme.com/), Nord for 
 - A beautiful interface with proper spacing, muted colors, the perfect amount of contrast, in order to make long writing hours easier.
 * If you encounter any problems, or if you have suggestions, please open a [new issue](https://github.com/ChristosBouronikos/typora-nord-theme/issues/new)  
 
-
-> This theme has only been tested on **Windows 10**. 
+> This theme has only been tested on **Windows 10** and **macOS Big Sur**. 
 >
 > If you have any problems on other platforms please let me know.
 
+### A few examples...
 
 ![](/media/nord1.png)
 
@@ -32,9 +32,6 @@ Based on the awesome [Nord color palette](https://www.nordtheme.com/), Nord for 
 
 ![](/media/nord3.png)
 
-![](/media/nord4.png)
-
-![](/media/nord5.png)
 
 ### Fixing some very minor inconveniences
 
@@ -46,6 +43,6 @@ There are also a few small changed on the CSS, but they're relatively minor (jus
 
 Also changed the overall layout of the files so that it's more easy to install the 'correct' set.
 
-### To install:
+### How to install this theme:
 
 - Open the themes folder (as explained under [the theme installation instructions](https://theme.typora.io/doc/Install-Theme/)) and move `nord.css` as well as the `nord` folder into it (the latter includes the 'missing' WOFF2 fonts). You can ignore all other files and folders.
