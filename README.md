@@ -7,7 +7,7 @@
 ![GitHub All Releases](https://img.shields.io/github/downloads/ChristosBouronikos/typora-nord-theme/total?color=%23c060a1&style=flat-square)
 
 
-| Help Support Development                                     | Donate now |                   
+| Help Support Development                                     | Donate now |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | <a href="https://www.buymeacoffee.com/chrisbouronikos" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-red.png" alt="Buy Me A Coffee" width="360" height="80"></a> | <a href="https://paypal.me/christosbouronikos" target="_blank"><img src="https://i.imgur.com/Fc70eDk.png" alt="Buy Me A Coffee" width="300" height="100"></a> |
 
@@ -32,8 +32,13 @@ Based on the awesome [Nord color palette](https://www.nordtheme.com/), Nord for 
 
 ![](/media/nord3.png)
 
+### How to install this theme:
 
-### Fixing some very minor inconveniences
+- Open the themes folder (as explained under [the theme installation instructions](https://theme.typora.io/doc/Install-Theme/)) and move `nord.css` as well as the `nord` folder into it (the latter includes the 'missing' WOFF2 fonts). You can ignore all other files and folders.
+
+
+
+##### Fixing some very minor inconveniences
 
 @ChristosBouronikos has done an outstanding job adapting Typora's colour scheme to the Nord colour palette, but there were some slight font issues, which I fixed; Windows 10 users would not have noticed anything 'wrong', because Christos used fonts that are available by default on Windows 10 — but not other platforms. I've tested under [macOS Big Sur](https://en.wikipedia.org/wiki/MacOS_Big_Sur) v11.1 Beta (20C5048k).
 
@@ -42,7 +47,3 @@ The Arctic Ice Studio website for the Nord colour palette uses _mostly_ the 'Rub
 There are also a few small changed on the CSS, but they're relatively minor (just keeping up with the slight changes introduced by the [Typora theme specifications](https://theme.typora.io/doc/Write-Custom-Theme/)!)
 
 Also changed the overall layout of the files so that it's more easy to install the 'correct' set.
-
-### How to install this theme:
-
-- Open the themes folder (as explained under [the theme installation instructions](https://theme.typora.io/doc/Install-Theme/)) and move `nord.css` as well as the `nord` folder into it (the latter includes the 'missing' WOFF2 fonts). You can ignore all other files and folders.
