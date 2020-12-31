@@ -44,12 +44,8 @@
   /* menu divider color */
   --menu-divider-color: ##3b4252;
   /* scrollbar color */
-  
   --scrollbar-thumb-color: #4c566a;
   --scrollbar-track-color: #4c566a;
-
-  
-
 
 
   /* theme select color */
@@ -107,16 +103,22 @@
 
   --node-border: var(--menu-divider-color);
   --node-fill: var(--bg-color2);
+  
+  /* I want Rubik by default! (gwyneth 20201123) */
+  --sans-serif: "Rubik";
+  --monospace: "Fira Code", "Source Code", "Consolas", monospace; /* seems to be the new way to do this */
 }
 
-/* font */
+/* Rubik is a variable font (gwyneth 20201123) */
 @font-face {
-  font-family: "Open Sans";
+  font-family: "Rubik";
   font-style: normal;
   font-weight: normal;
-  src: local("Open Sans Regular"), url("./onedark/400.woff") format("woff");
+  src: local("Rubik"), url("./nord/Rubik-VF.woff2") format("woff2");
 }
 
+/* Rubik is a variable font so the remaining is not necessary (gwyneth 20201123) */
+/*
 @font-face {
   font-family: "Open Sans";
   font-style: italic;
@@ -137,6 +139,31 @@
   font-weight: bold;
   src: local("Open Sans Bold Italic"), url("./onedark/700i.woff") format("woff");
 }
+*/
+
+/* Fira Code is a variable font, too (gwyneth 20201123) */
+@font-face {
+  font-family: "Fira Code";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Fira Code Retina"), local("Fira Code Regular"), local("Fira Code"), url("./nord/FiraCode-VF.woff2") format("woff2");
+}
+
+/* Source Code is a variable font, but it has separate Roman and Italic subfonts as of 2019 (gwyneth 20201123) */
+@font-face {
+  font-family: "Source Code";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Source Code Regular"), local("Source Code Variable Regular"), local("Source Code"), url("./nord/SourceCodeVariable-Roman.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Source Code";
+  font-style: italic;
+  font-weight: normal;
+  src: local("Source Code Italic"), local("Source Code Variable Italic"), local("Source Code"), url("./nord/SourceCodeVariable-Italic.woff2") format("woff2");
+}
+
 
 /* basic style */
 html {
@@ -144,8 +171,7 @@ html {
 }
 
 body {
-  font-family: "Consolas", "Open Sans", "Clear Sans", "Helvetica Neue", Helvetica, Arial,
-    sans-serif;
+  font-family: var(--sans-serif);  /* default used to be monospace... (gwyneth 20201123) */
   color: var(--text-color1);
   background: var(--bg-color1);
   line-height: 1.6;
@@ -172,47 +198,49 @@ body {
 #write h4,
 #write h5,
 #write h6 {
-  margin-top: 0.5em;
-  margin-bottom: 0em;
-  line-height: 1em;
+  margin-top: 0.5rem;
+  margin-bottom: 0rem;
+  line-height: 1.6;
+  color: var(--text-color5);
 }
 
 #write h1 {
-  font-size: 2.5em;
-  padding-bottom: 0.5em;
+  font-size: 2.5rem;
+  padding-bottom: 0.5rem;
   border-bottom: 5px double var(--text-color1);
 }
 
-#write h1:before {
+/* I personally hate the § thingy before headers!! (gwyneth 20201123) */
+/* #write h1:before {
   content: "\00A7  ";
-}
+}*/
 
 #write h2 {
-  font-size: 2em;
-  padding-bottom: 0.5em;
+  font-size: 2rem;
+  padding-bottom: 0.5rem;
   border-bottom: 3px double var(--text-color1);
 }
 
-#write h2:before {
+/* #write h2:before {
   content: "\00A7  ";
-}
+} */
 
 #write h3 {
-  font-size: 1.75em;
-  padding-bottom: 0.5em;
+  font-size: 1.75rem;
+  padding-bottom: 0.5rem;
   border-bottom: 1px solid var(--text-color1);
 }
 
 #write h4 {
-  font-size: 1.55em;
+  font-size: 1.55rem;
 }
 
 #write h5 {
-  font-size: 1.35em;
+  font-size: 1.35rem;
 }
 
 #write h6 {
-  font-size: 1.2em;
+  font-size: 1.2rem;
 }
 
 /* horizontal divider */
@@ -854,8 +882,6 @@ select[disabled]:hover {
   visibility: hidden;
   opacity: 0;
   transition: 0.3s;
-
-
 }
 
 .megamenu-opened .megamenu-content {
@@ -868,14 +894,11 @@ select[disabled]:hover {
 .megamenu-menu {
   background-color: var(--bg-color2);
   box-shadow: 3px 0px 10px rgba(0, 0, 0, 0.5);
-
-
 }
 
 /* return button in mega menu */
 #megamenu-menu-sidebar .menu-style-btn {
-  border: 0px;
-  
+  border: 0px; 
 }
 
 /* remove divider in mega menu */
@@ -962,8 +985,6 @@ select[disabled]:hover {
   text-decoration: none;
   font-size: 22px;
 }
-
-
 
 
 .dropdown-menu:not(.megamenu-menu-list) {
@@ -1107,7 +1128,8 @@ footer.ty-footer {
 
 /* inline codeblock */
 code {
-  font-size: 0.9em;
+  font-family: var(--monospace);
+  font-size: 0.9rem;
   background-color: var(--bg-color5);
   border-radius: 6px;
   padding: 4px 4px 4px 4px;
@@ -1303,7 +1325,7 @@ code {
 /* unknown highlight keyword */
 .cm-s-inner .cm-quote,
 .cm-s-inner.cm-quote {
-  color: #57ac57;
+  color: var(--code-green-color);
 }
 
 .cm-s-inner .cm-link {
@@ -1311,15 +1333,15 @@ code {
 }
 
 .cm-s-inner .cm-negative {
-  color: #d95050;
+  color: var(--code-purple-color);
 }
 
 .cm-s-inner .cm-positive {
-  color: #50e650;
+  color: var(--code-green-color);
 }
 
 .cm-s-inner .cm-string-2 {
-  color: #f50;
+  color: var(--code-red-color);
 }
 
 .CodeMirror-gutters {
@@ -1349,6 +1371,13 @@ code {
 
 .on-focus-mode #write h3:not(.md-focus) {
   border-color: var(--text-color5);
+}
+
+/* default pre is set similar to code (gwyneth 20201123) */
+pre {
+  font-family: var(--monospace);
+  font-size: 0.9rem;
+  background-color: var(--bg-color5);
 }
 
 /* YAML block */
@@ -1704,7 +1733,7 @@ text.actor {
 
 .md-fences[lang="sequence"] text,
 .md-fences[lang="flow"] text {
-  font-family: "Consolas" !important;
+  font-family: var(--monospace) !important;
 }
 
 /* remove box shadow when not edit graph */
