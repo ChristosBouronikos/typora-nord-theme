@@ -16,7 +16,7 @@
             <td> <img style="display: block; margin-left: auto; margin-right: auto;" src="https://img.shields.io/github/downloads/ChristosBouronikos/typora-nord-theme/total?color=%23BF616A&style=for-the-badge">
             </td>
             <td style="text-align: center; vertical-align: middle;">
-<a style="color: #5E81AC; padding: 15px 25px; text-align: center; text-decoration: none; display: inline-block;" href="https://paypal.me/christosbouronikos" target="_blank"><img src="https://i.imgur.com/Fc70eDk.png" alt="Paypal" width="250" height="100"></a></td>
+<a style="color: #5E81AC; padding: 15px 25px; text-align: center; text-decoration: none; display: inline-block;" href="https://paypal.me/christosbouronikos" target="_blank"> <img src="https://www.paypalobjects.com/webstatic/mktg/Logo/pp-logo-200px.png" alt="Paypal" ></a></td>
         </tr>
     </tbody>
 </table>
