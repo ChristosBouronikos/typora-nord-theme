@@ -1348,6 +1348,21 @@ code {
   border-right: none;
 }
 
+
+
+/* --------------------------------------------- */
+
+/* FOCUS MODE */
+
+.on-focus-mode #write img, .on-focus-mode #write svg {
+  opacity: 0.8;
+}
+
+/* FOCUS MODE END */
+
+
+/* -------------------------------------------- */
+
 /* focus mode */
 .on-focus-mode .md-end-block:not(.md-focus) .md-toc-item {
   opacity: 0.5;
