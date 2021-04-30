@@ -13,7 +13,7 @@
     </thead>
     <tbody>
         <tr style="background: #3B4252; color:#ECEFF4; font-size: 12pt">
-            <td style="text-align: center; vertical-align: middle;" > <img style="display: block; margin-left: auto; margin-right: auto; width: 60%;" src="https://img.shields.io/github/downloads/ChristosBouronikos/typora-nord-theme/total?color=%23c060a1&amp;style=flat-square">
+            <td> <img style="display: block; margin-left: auto; margin-right: auto;" src="https://img.shields.io/github/downloads/ChristosBouronikos/typora-nord-theme/total?color=%23BF616A&style=for-the-badge">
             </td>
             <td style="text-align: center; vertical-align: middle;">
 <a style="color: #5E81AC; padding: 15px 25px; text-align: center; text-decoration: none; display: inline-block;" href="https://paypal.me/christosbouronikos" target="_blank"><img src="https://i.imgur.com/Fc70eDk.png" alt="Paypal" width="250" height="100"></a></td>
