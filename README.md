@@ -13,18 +13,20 @@
     </thead>
     <tbody>
         <tr style="background: #3B4252; color:#ECEFF4; font-size: 12pt">
-            <td><img style="display: block; margin-left: auto; margin-right: auto; width: 50%;" src="https://img.shields.io/github/downloads/ChristosBouronikos/typora-nord-theme/total?color=%23c060a1&amp;style=flat-square">
+            <td style="text-align: center; vertical-align: middle;" > <img style="display: block; margin-left: auto; margin-right: auto; width: 60%;" src="https://img.shields.io/github/downloads/ChristosBouronikos/typora-nord-theme/total?color=%23c060a1&amp;style=flat-square">
             </td>
-            <td style="text-align:center;">
-<a style="color: #5E81AC; padding: 15px 25px; text-align: center; text-decoration: none; display: inline-block;" href="https://paypal.me/christosbouronikos" target="_blank"><img
-                        src="https://i.imgur.com/Fc70eDk.png" alt="Buy Me A Coffee" width="250" height="100"></a></td>
+            <td style="text-align: center; vertical-align: middle;">
+<a style="color: #5E81AC; padding: 15px 25px; text-align: center; text-decoration: none; display: inline-block;" href="https://paypal.me/christosbouronikos" target="_blank"><img src="https://i.imgur.com/Fc70eDk.png" alt="Paypal" width="250" height="100"></a></td>
         </tr>
     </tbody>
 </table>
 
 
+Based on the [Nord color palette](https://www.nordtheme.com/), Nord for Typora provides a clean and beautiful User Interface for your Markdown needs.
 
-Based on the [Nord color palette](https://www.nordtheme.com/), Nord for Typora provides a clean and beautiful User Interface for your Markdown needs
+### How to install this theme:
+
+- Open the themes folder (as explained under [the theme installation instructions](https://theme.typora.io/doc/Install-Theme/)) and move `nord.css` as well as the `nord` folder into it (the latter includes the 'missing' WOFF2 fonts). You can ignore all other files and folders.
 
 ## Screenshots
 
@@ -40,9 +42,6 @@ Based on the [Nord color palette](https://www.nordtheme.com/), Nord for Typora p
 
 ![footnotes](/media/nord6.png)
 
-### How to install this theme:
-
-- Open the themes folder (as explained under [the theme installation instructions](https://theme.typora.io/doc/Install-Theme/)) and move `nord.css` as well as the `nord` folder into it (the latter includes the 'missing' WOFF2 fonts). You can ignore all other files and folders.
 
 ### If you encounter a problem
 
@@ -53,8 +52,7 @@ If you encounter any problems, or if you have suggestions, please open a [new is
 > If you have any problems on other platforms please let me know.
 
 
-
-##### Brought to you by:
+### Brought to you by:
 
 [ChristosBouronikos](https://github.com/ChristosBouronikos) the Original creator of the Typora Nord Theme.
 
