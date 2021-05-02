@@ -5,7 +5,7 @@
 <table> 
     <thead>
         <tr style="background: #2E3440; color:#ECEFF4; font-size: 14pt">
-            <th style="text-align:center; color: #ECEFF4"><span>People </span><b style="color: #bf616a; font-size:18pt;"><span>LOVE</span></b><span> the Typora Nord Theme</span></th>
+            <th style="text-align:center; color: #ECEFF4"><span>People </span> <u style="font-size:18pt;">LOVE</u><span> the Typora Nord Theme</span></th>
             <th style="text-align:center;"><a href="https://paypal.me/christosbouronikos"><span>Help Support
                         Development</span></a><span> - </span><a
                     href="https://paypal.me/christosbouronikos"><span>Donate now</span></a></th>
